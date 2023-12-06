@@ -1,0 +1,59 @@
+{% extends "shop/base.html" %}
+{% load static %}
+{% load widget_tweaks %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static "css/nicepage.css" %}">
+<link rel="stylesheet" href="{% static "css/Корзина.css" %}">
+{% endblock %}
+
+{% block title %}
+Корзина
+{% endblock %}
+{% block content %}
+    <section class="u-clearfix u-section-1" id="sec-9ac1">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <p class="u-align-center u-text u-text-default u-text-1">Корзина</p>
+        <p class="u-align-left u-text u-text-default u-text-2">Здесь отображаются товары, которые Вы хотите приобрести. Для оплаты определенного товара, нажмите на него, заполните определенную форму и нажмите "Оплатить".</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-2" id="sec-58f4">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-expanded-width u-layout-grid u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+              {% for cart_product in products %}
+            <div class="u-border-2 u-border-grey-75 u-container-style u-list-item u-repeater-item">
+
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                  <a href="{{ cart_product.get_absolute_url }}" style="color: black;">
+                  <div>
+                      <img class="u-expanded-width u-image u-image-round u-radius-10 u-image-1"
+                           src="{% if cart_product.product.image %}{{ cart_product.product.image.url }}
+{% else %}{% static "img/no_photo.jpg" %}{% endif %}" alt="" data-image-width="5616" data-image-height="3744">
+                    <p class="u-align-center u-text u-text-1">{{ cart_product.product.name }}</p>
+                    <p class="u-text u-text-2" style="float: left;">Цена за единицу товара:</p>
+                    <p class="u-align-right u-text u-text-3" style="float: right;">{{ cart_product.price }} руб.</p>
+                      <span class="u-align-left u-text" style="font-size:24px;">Количество:</span>
+                      <span class="u-align-right u-text" style="float:right; font-size:24px;">{{ cart_product.quantity }}</span>
+                  </div>
+                  </a>
+<!--                  <a href="{{ cart_product.get_absolute_url }}" style="background: green; color:white; font-size:20px;">Оплатить</a>-->
+                  <form action="{{ cart_product.product.get_absolute_url }}" method="get" style="display:inline">
+                      {% csrf_token %}
+                      <input type="submit" value="Просмотреть" style="background: blue; color:white; font-size:20px;">
+                  </form>
+                  <form action="{% url 'cart:cart_remove' cart_product.id %}" method="post" style="display:inline">
+                      {% csrf_token %}
+                      <input type="submit" value="Удалить" style="background: red; color: yellow; font-size:20px; float:right;">
+                  </form>
+<!--                  <a href="{% url 'cart:cart_remove' cart_product.id %} " style="background: red; color: yellow; font-size:20px; float:right;">Удалить</a>-->
+              </div>
+
+            </div>
+              {% endfor %}
+
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

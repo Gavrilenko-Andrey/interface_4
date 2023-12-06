@@ -1,0 +1,36 @@
+{% extends "shop/base.html" %}
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static "css/nicepage.css" %}">
+<link rel="stylesheet" href="{% static "css/Товар.css" %}">
+{% endblock %}
+
+{% block title %}
+{{ product.name }}
+{% endblock %}
+{% block content %}
+    <section class="u-clearfix u-section-1" id="sec-bf29">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <img class="u-align-center u-image u-image-default u-image-1" src="{% if product.image %}{{ product.image.url }}
+{% else %}{% static "img/no_photo.jpg" %}{% endif %}" alt="" data-image-width="5616" data-image-height="3744">
+        <p class="u-align-left u-text u-text-default u-text-1">{{ product.name }}</p>
+        <p class="u-align-right u-text u-text-default u-text-2">Цена за единицу товара: {{ product.price }} руб.</p>
+
+        <form action="{% url 'cart:cart_add' product.id %}" method="post">
+            {{ addproductform }}
+          <input type="submit" value="Добавить в корзину" class="u-border-none u-btn u-btn-round u-button-style u-palette-4-base u-radius-50 u-btn-1">
+       {% csrf_token %}
+          </form>
+<!--<a href="{% url 'cart:cart_add' product.id %}" methods="post" class="u-border-none u-btn u-btn-round u-button-style u-palette-4-base u-radius-50 u-btn-1">Добавить в корзину</a>&ndash;&gt;-->
+        <p class="u-align-left u-text u-text-default u-text-3">
+          <span style="font-size: 1.875rem;">Описание товара</span>
+            <br>{{ product.description }}
+        </p>
+        <p class="u-align-left u-text u-text-default u-text-4">
+          <span style="font-size: 1.875rem;">Категория товара: {{ product.category }}</span>
+          <br>
+        </p>
+      </div>
+    </section>
+{% endblock %}

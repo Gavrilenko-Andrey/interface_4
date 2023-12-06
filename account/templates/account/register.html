@@ -1,0 +1,63 @@
+{% extends "shop/base.html" %}
+{% load static %}
+{% load widget_tweaks %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static "css/nicepage.css" %}">
+<link rel="stylesheet" href="{% static "css/Регистрация.css" %}">
+{% endblock %}
+
+{% block title %}
+Регистрация
+{% endblock %}
+{% block content %}
+    <section class="skrollable u-clearfix u-section-1" id="sec-9db8">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-align-center u-text u-text-default u-text-1">Регистрация на сайте</p>
+        <div class="u-form u-form-1">
+          <form method="post" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 10px;">
+
+            <div class="u-form-group u-form-name">
+              <label for="{{ user_form.first_name.id_for_label }}" class="u-label">Имя</label>
+<!--              <input type="text" placeholder="Введите Ваше имя" id="name-3113" name="name" class="u-input u-input-rectangle">-->
+                {{ user_form.first_name|add_class:'u-input'|add_class:'u-input-rectangle' }}
+                {{ user_form.first_name.errors }}
+            </div>
+            <div class="u-form-email u-form-group">
+              <label for="{{ user_form.username.id_for_label }}" class="u-label">Псевдоним</label>
+<!--              <input type="text" placeholder="Введите Ваш псевдоним, использующийся для входа на сайт" id="email-3113" name="username" class="u-input u-input-rectangle" required="">-->
+                {{ user_form.username|add_class:'u-input'|add_class:'u-input-rectangle' }}
+                {{ user_form.username.errors }}
+            </div>
+            <div class="u-form-group u-form-group-3">
+              <label for="{{ user_form.email.id_for_label }}" class="u-label">Электронная почта</label>
+<!--              <input type="email" id="text-044e" name="email" class="u-input u-input-rectangle" placeholder="Введите Ваш адрес эл. почты">-->
+                {{ user_form.email|add_class:'u-input'|add_class:'u-input-rectangle' }}
+                {{ user_form.email.errors }}
+            </div>
+            <div class="u-form-group u-form-group-4">
+              <label for="{{ user_form.password.id_for_label }}" class="u-label">Пароль</label>
+<!--              <input type="password" placeholder="Введите Ваш пароль, использующийся для входа на сайт" id="text-431e" name="password" class="u-input u-input-rectangle" required="required">-->
+                {{ user_form.password|add_class:'u-input'|add_class:'u-input-rectangle' }}
+                {{ user_form.password.errors }}
+            </div>
+            <div class="u-form-group u-form-group-5">
+              <label for="{{ user_form.password2.id_for_label }}" class="u-label">Подтвердите пароль</label>
+<!--              <input type="password" placeholder="Обе строки с паролями должны совпадать" id="text-7440" name="password2" class="u-input u-input-rectangle" required="required">-->
+                {{ user_form.password2|add_class:'u-input'|add_class:'u-input-rectangle' }}
+                {{ user_form.password2.errors }}
+            </div>
+            <div class="u-align-center u-form-group u-form-submit">
+<!--              <a href="#" class="u-btn u-btn-round u-btn-submit u-button-style u-radius-50">Зарегистрироваться</a>-->
+              <input type="submit" value="Зарегистрироваться" class="u-btn u-btn-round u-btn-submit u-button-style u-radius-50">
+            </div>
+              {% csrf_token %}
+<!--              {{ user_form.errors }}-->
+<!--            <div class="u-form-send-message u-form-send-success"> Спасибо! Ваше сообщение отправлено. </div>-->
+<!--            <div class="u-form-send-error u-form-send-message"> Отправка не удалась. Пожалуйста, исправьте ошибки и попробуйте еще раз. </div>-->
+          </form>
+        </div>
+        <a href="{% url "account:login" %}" class="u-align-center u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-base u-btn u-button-style u-none u-btn-2">Если вы уже зарегистрировались, войдите на сайт, нажав здесь.</a>
+      </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,87 @@
+{% extends "shop/base.html" %}
+{% load static %}
+{% load widget_tweaks %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static "css/nicepage.css" %}">
+<link rel="stylesheet" href="{% static "css/Профиль.css" %}">
+{% endblock %}
+
+{% block title %}
+Профиль
+{% endblock %}
+{% block content %}
+    <section class="u-clearfix u-section-1" id="sec-4367">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <p class="u-align-center u-text u-text-default u-text-1">Ваш профиль</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-2" id="sec-566d">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <p class="u-align-center u-text u-text-default u-text-1">Здесь вы можете посмотреть ваши данные и изменить некоторые из них (фото, имя, почта, пароль).</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-3" id="sec-55d9">
+      <div class="u-clearfix u-sheet u-sheet-1">
+
+        <div class="u-align-right u-form u-form-1">
+          <form method="post" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 10px;" enctype="multipart/form-data">
+            <div class="u-form-group u-form-name">
+              <label for="{{ user_form.first_name.id_for_label }}" class="u-label">Имя</label>
+<!--              <input type="text" placeholder="Введите Ваше имя" id="name-3113" name="name" class="u-input u-input-rectangle">-->
+                {{ user_form.first_name|add_class:'u-input'|add_class:'u-input-rectangle' }}
+                {{ user_form.first_name.errors }}
+            </div>
+            <div class="u-form-group u-form-group-2">
+              <label for="{{ user_form.email.id_for_label }}" class="u-label">Электронная почта</label>
+<!--              <input type="email" id="text-044e" name="email" class="u-input u-input-rectangle" placeholder="Введите Ваш адрес эл. почты">-->
+                {{ user_form.email|add_class:'u-input'|add_class:'u-input-rectangle' }}
+                {{ user_form.email.errors }}
+            </div>
+            <div class="u-form-group u-form-group-3">
+              <label for="{{ user_form.password.id_for_label }}" class="u-label">Пароль</label>
+<!--              <input type="password" placeholder="Введите Ваш пароль, использующийся для входа на сайт" id="text-431e" name="password" class="u-input u-input-rectangle" required="required">-->
+                {{ user_form.password|add_class:'u-input'|add_class:'u-input-rectangle' }}
+                {{ user_form.password.errors }}
+            </div>
+            <div class="u-form-group u-form-group-4">
+              <label for="{{ user_form.password2.id_for_label }}" class="u-label">Подтвердите пароль</label>
+<!--              <input type="password" placeholder="Обе строки с паролями должны совпадать" id="text-7440" name="password2" class="u-input u-input-rectangle" required="required">-->
+                {{ user_form.password2|add_class:'u-input'|add_class:'u-input-rectangle' }}
+                {{ user_form.password2.errors }}
+            </div>
+              <p class="u-text u-text-default u-text-1">
+                  <label for="{{ profile_form.photo.id_for_label }}"></label>Фото профиля</p>
+              <img class="u-image u-image-circle u-image-1" src="{% if profile.photo %}{{ profile.photo.url }}
+{% else %}{% static "img/no_photo.jpg" %}{% endif %}" alt="" data-image-width="5000" data-image-height="3220">
+
+
+              <p>{{ profile_form.photo }}</p>
+              <p class="u-text u-text-default u-text-1">Изменится на:</p>
+              <p><img id="img-preview" class="u-image u-image-circle u-image-1" src="{% if profile.photo %}{{ profile.photo.url }}
+{% else %}{% static "img/no_photo.jpg" %}{% endif %}"></p>
+              {% csrf_token %}
+            <div class="u-align-center u-form-group u-form-submit">
+<!--              <a href="#" class="u-btn u-btn-round u-btn-submit u-button-style u-radius-50">Изменить</a>-->
+              <input type="submit" value="Изменить" class="u-btn u-btn-round u-btn-submit u-button-style u-radius-50">
+            </div>
+<!--            <div class="u-form-send-message u-form-send-success"> Спасибо! Ваше сообщение отправлено. </div>-->
+<!--            <div class="u-form-send-error u-form-send-message"> Отправка не удалась. Пожалуйста, исправьте ошибки и попробуйте еще раз. </div>-->
+          </form>
+        </div>
+      </div>
+    </section>
+<script>
+    let upload_button = document.getElementById('{{ profile_form.photo.id_for_label }}')
+    upload_button.addEventListener('change', (e) =>{
+    const currFiles = e.target.files
+    if(currFiles.length > 0) {
+        let src = URL.createObjectURL(currFiles[0])
+        let imagePreview = document.getElementById('img-preview')
+        imagePreview.src = src
+        imagePreview.style.display = "block"
+    }
+    })
+</script>
+{% endblock %}
+    

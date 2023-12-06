@@ -1,0 +1,96 @@
+{% extends "shop/base.html" %}
+{% load static %}
+{% load widget_tweaks %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static "css/nicepage.css" %}">
+<link rel="stylesheet" href="{% static "css/Добавление-товара.css" %}">
+{% endblock %}
+
+{% block title %}
+Добавление товара
+{% endblock %}
+
+{% block content %}
+    <section class="u-clearfix u-section-1" id="sec-4974">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-align-center u-text u-text-default u-text-1">Добавление товара на сайт </p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-2" id="sec-b280">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <p class="u-align-center u-text u-text-default u-text-1">Заполните все поля следующей формы чтобы выставить Ваш товар на сайт интернет-магазина.</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-3" id="sec-251d">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-align-center u-form u-form-1">
+          <form action="{% if edit %}{% url 'shop:edit_product' product.id product.slug %}{% else %}
+          {% url 'shop:add_product' %}{% endif %}" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form"
+                method="post" style="padding: 10px;" enctype="multipart/form-data">
+            <div class="u-form-group u-form-name">
+              <label for="{{ add_product_form.name.id_for_label }}" class="u-label">Название</label>
+<!--              <input type="text" placeholder="Введите название товара" id="name-cdfe" name="name" class="u-input u-input-rectangle" required="">-->
+                {{ add_product_form.name|add_class:'u-input'|add_class:'u-input-rectangle' }}
+            </div>
+            <div class="u-form-group u-form-select u-form-group-2">
+              <label for="{{ add_product_form.category.id_for_label }}" class="u-label">Категория товара</label>
+              <div class="u-form-select-wrapper">
+                    {{ add_product_form.category|add_class:'u-input'|add_class:'u-input-rectangle' }}
+<!--                <select id="select-5f9f" name="category" class="u-input u-input-rectangle" required="required">-->
+<!--                  <option value="0" data-calc="0">Спорт</option>-->
+<!--                  <option value="1" data-calc="1">Бытовые товары</option>-->
+<!--                  <option value="2" data-calc="2">Одежда</option>-->
+<!--                  <option value="3" data-calc="3">Путешествия</option>-->
+<!--                  <option value="4" data-calc="4">Электроника</option>-->
+<!--                  <option value="5" data-calc="5">Учеба</option>-->
+<!--                  <option value="6" data-calc="6">Еда</option>-->
+<!--                </select>-->
+<!--                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>-->
+              </div>
+            </div>
+            <div class="u-form-group u-form-group-3">
+              <label for="{{ add_product_form.description.id_for_label }}" class="u-label">Описание товара</label>
+                {{ add_product_form.description|add_class:'u-input'|add_class:'u-input-rectangle' }}
+<!--              <input type="text" placeholder="Введите необходимые характеристики товара" id="text-0555" name="text" class="u-input u-input-rectangle">-->
+            </div>
+            <div class="u-form-group u-form-number u-form-number-layout-number u-form-group-4">
+              <label for="{{ add_product_form.price.id_for_label }}" class="u-label">Введите цену для товара</label>
+              <div class="u-input-row">
+<!--                <input value="0" min="1" step="50" type="number" placeholder="" id="number-86cb" name="number" class="u-input u-input-rectangle u-text-black">-->
+                  {{ add_product_form.price|add_class:'u-input'|add_class:'u-input-rectangle'|add_class:'u-text-black' }}
+              </div>
+            </div>
+              <label for="{{ profile_form.photo.id_for_label }}">Картинка товара</label>
+              <p><img id="img-preview" class="u-image u-image-circle u-image-1" style="max-width: 800px;"
+                      src="{% if product.image %}{{ product.image.url }}{% else %}{% static "img/no_photo.jpg" %}{% endif %}"></p>
+
+
+              <p>{{ add_product_form.image }}</p>
+              {% csrf_token %}
+            <div class="u-align-center u-form-group u-form-submit">
+<!--              <a href="#" class="u-btn u-btn-submit u-button-style">Отправить</a>-->
+              <input type="submit" value="{% if edit %}Изменить{% else %}Добавить товар{% endif %}" class="u-btn u-btn-submit u-button-style">
+            </div>
+<!--            <div class="u-form-send-message u-form-send-success"> Спасибо! Ваше сообщение отправлено. </div>-->
+<!--            <div class="u-form-send-error u-form-send-message"> Отправка не удалась. Пожалуйста, исправьте ошибки и попробуйте еще раз. </div>-->
+<!--            <input type="hidden" value="" name="recaptchaResponse">-->
+<!--            <input type="hidden" name="formServices" value="3b66ce92-a29c-7346-5d89-39a2d2274953">-->
+          </form>
+        </div>
+      </div>
+    </section>
+<script>
+    let upload_button = document.getElementById('{{ add_product_form.image.id_for_label }}')
+    upload_button.addEventListener('change', (e) =>{
+    const currFiles = e.target.files
+    if(currFiles.length > 0) {
+        let src = URL.createObjectURL(currFiles[0])
+        let imagePreview = document.getElementById('img-preview')
+        imagePreview.src = src
+        imagePreview.style.display = "block"
+    }
+    })
+</script>
+{% endblock %}
+

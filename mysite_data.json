@@ -1,0 +1,1407 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2023-11-26T12:51:52.098Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Машины",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2023-11-26T12:52:01.290Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Спорт",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2023-11-26T12:52:40.228Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "BMW",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2023-11-26T12:53:23.319Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Лада Калина",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2023-11-26T12:54:13.183Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Мяч футбольный",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2023-11-26T12:54:54.017Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Скакалка",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2023-11-26T12:55:35.854Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Шайба хоккейная",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2023-11-26T13:27:08.705Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "BMW",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2023-11-28T08:48:36.460Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "Профиль murzilka",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2023-11-29T07:19:17.543Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Мазда",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2023-11-29T07:28:11.224Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "Вещь",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2023-11-29T07:30:03.711Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "ааааацрурупукпаупкпувыам",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2023-11-29T07:31:04.416Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "1111",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2023-11-29T07:31:04.420Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "ааааацрурупукпаупкпувыам",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2023-11-29T07:31:04.423Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "ацацуаццацуацууц",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2023-11-29T07:31:15.367Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "Вещь",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2023-11-29T07:35:52.951Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "11",
+    "object_repr": "33",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2023-11-29T08:56:17.528Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Бытовые товары",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2023-11-29T08:56:24.818Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Одежда",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2023-11-29T08:56:28.891Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Еда",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2023-11-29T08:56:46.108Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Путешествия",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2023-11-29T08:56:52.638Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Электроника",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2023-11-29T08:56:58.136Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Учеба",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2023-11-29T09:06:09.842Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Профиль Ваня",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2023-11-30T11:33:19.120Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "Order 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2023-11-30T12:11:00.937Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Order 2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add category",
+    "content_type": 7,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change category",
+    "content_type": 7,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete category",
+    "content_type": 7,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view category",
+    "content_type": 7,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add product",
+    "content_type": 8,
+    "codename": "add_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change product",
+    "content_type": 8,
+    "codename": "change_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete product",
+    "content_type": 8,
+    "codename": "delete_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view product",
+    "content_type": 8,
+    "codename": "view_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add cart product",
+    "content_type": 9,
+    "codename": "add_cartproduct"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change cart product",
+    "content_type": 9,
+    "codename": "change_cartproduct"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete cart product",
+    "content_type": 9,
+    "codename": "delete_cartproduct"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view cart product",
+    "content_type": 9,
+    "codename": "view_cartproduct"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add cart",
+    "content_type": 10,
+    "codename": "add_cart"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change cart",
+    "content_type": 10,
+    "codename": "change_cart"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete cart",
+    "content_type": 10,
+    "codename": "delete_cart"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view cart",
+    "content_type": 10,
+    "codename": "view_cart"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add profile",
+    "content_type": 11,
+    "codename": "add_profile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change profile",
+    "content_type": 11,
+    "codename": "change_profile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete profile",
+    "content_type": 11,
+    "codename": "delete_profile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view profile",
+    "content_type": 11,
+    "codename": "view_profile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add order",
+    "content_type": 12,
+    "codename": "add_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change order",
+    "content_type": 12,
+    "codename": "change_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete order",
+    "content_type": 12,
+    "codename": "delete_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view order",
+    "content_type": 12,
+    "codename": "view_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add order item",
+    "content_type": 13,
+    "codename": "add_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change order item",
+    "content_type": 13,
+    "codename": "change_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete order item",
+    "content_type": 13,
+    "codename": "delete_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view order item",
+    "content_type": 13,
+    "codename": "view_orderitem"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$npL9yUbcpw3vmvNfZek2il$ygt3vJIsZfadr0goX43LBfJ3uBhNOyMVT1bMqcnHhoE=",
+    "last_login": "2023-12-01T01:34:45.908Z",
+    "is_superuser": true,
+    "username": "murzilka",
+    "first_name": "Андрей",
+    "last_name": "",
+    "email": "germannvins@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-11-26T06:41:06.314Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$AHXR0Fo5y1StdbpxVxO8uj$8pzndlwpNz7/o1CvH7nHzZV/J86w483XrQbZuOZhBcY=",
+    "last_login": "2023-11-28T07:06:23.404Z",
+    "is_superuser": false,
+    "username": "Победитель",
+    "first_name": "Лев",
+    "last_name": "",
+    "email": "an.s.gavrilenko@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-11-28T07:06:10.577Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$qmXi9416YXAmQ3CW82TAyl$KM8toiOFckkfkGEcGq3fG5Sn5KwbfiHs8uMybGuMrc4=",
+    "last_login": "2023-11-29T08:59:06.791Z",
+    "is_superuser": false,
+    "username": "Ваня",
+    "first_name": "",
+    "last_name": "",
+    "email": "pmi13.yashkov@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-11-29T08:58:37.186Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$YT0y7QbiWuAYsHSmUgIZX0$VJIXW5++NU4v72rVRT8+a2yyknA30T7LroC21y71w9g=",
+    "last_login": "2023-11-30T15:32:17.495Z",
+    "is_superuser": false,
+    "username": "Новый Пользователь",
+    "first_name": "",
+    "last_name": "",
+    "email": "some@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-11-30T15:29:27.695Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "shop",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "shop",
+    "model": "product"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "cart",
+    "model": "cartproduct"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "cart",
+    "model": "cart"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "account",
+    "model": "profile"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "order",
+    "model": "order"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "order",
+    "model": "orderitem"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "56uau0sminmkzytdmr983fkglfe1tnfm",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hCowFCX7nsGMsOAVA0kpV0Z765NutDtf-_9lwi4rSVsPS1hZnERWpx-N8L4SHUHfMd6azK2ui4zyV2RB-1yapye18P9OyjYy7cmpTmftceRDFA2OaHzGjNoi1FZg5yYnIcBxoyJ0AHDkEkrQwq8NeL9AQawOIw:1r8doU:EzZK0MiY93Dlqt3S1ijE-KKkI8H_37AZqIOBJ8NY23g",
+    "expire_date": "2023-12-14T09:58:30.703Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "r8latpq13fo3xswpsr1p886b470opyt4",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hCowFCX7nsGMsOAVA0kpV0Z765NutDtf-_9lwi4rSVsPS1hZnERWpx-N8L4SHUHfMd6azK2ui4zyV2RB-1yapye18P9OyjYy7cmpTmftceRDFA2OaHzGjNoi1FZg5yYnIcBxoyJ0AHDkEkrQwq8NeL9AQawOIw:1r8dpF:fxhkFp8_YHwahiEuRWk-9yy5bZ1wyHT6AOdOX_gSzLQ",
+    "expire_date": "2023-12-14T09:59:17.221Z"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 1,
+  "fields": {
+    "name": "Машины",
+    "slug": "mashiny"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 2,
+  "fields": {
+    "name": "Спорт",
+    "slug": "sport"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 3,
+  "fields": {
+    "name": "Бытовые товары",
+    "slug": "bytovye-tovary"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 4,
+  "fields": {
+    "name": "Одежда",
+    "slug": "odezhda"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 5,
+  "fields": {
+    "name": "Еда",
+    "slug": "eda"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 6,
+  "fields": {
+    "name": "Путешествия",
+    "slug": "puteshestviya"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 7,
+  "fields": {
+    "name": "Электроника",
+    "slug": "elektronika"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 8,
+  "fields": {
+    "name": "Учеба",
+    "slug": "ucheba"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 1,
+  "fields": {
+    "category": 1,
+    "name": "BMW",
+    "slug": "bmw",
+    "image": "products/2023/11/26/bmw.jpg",
+    "description": "Лучшая машина современности",
+    "price": "2000000.00",
+    "available": true,
+    "created": "2023-11-26T12:52:40.226Z",
+    "updated": "2023-11-30T09:54:26.063Z",
+    "owner": 1
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 3,
+  "fields": {
+    "category": 2,
+    "name": "Мяч футбольный",
+    "slug": "myach-futbolnyj",
+    "image": "",
+    "description": "Самый дешевый футбольный мяч из возможных",
+    "price": "200.00",
+    "available": false,
+    "created": "2023-11-26T12:54:13.183Z",
+    "updated": "2023-12-01T01:39:18.833Z",
+    "owner": 1
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 4,
+  "fields": {
+    "category": 2,
+    "name": "Скакалка",
+    "slug": "skakalka",
+    "image": "",
+    "description": "Пропуск хода",
+    "price": "500.00",
+    "available": false,
+    "created": "2023-11-26T12:54:54.016Z",
+    "updated": "2023-12-01T01:39:02.852Z",
+    "owner": 1
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 6,
+  "fields": {
+    "category": 1,
+    "name": "Мазда",
+    "slug": "mazda",
+    "image": "products/2023/11/29/youtube.png",
+    "description": "Машина №1",
+    "price": "20.00",
+    "available": false,
+    "created": "2023-11-29T07:10:42.325Z",
+    "updated": "2023-12-01T01:38:57.466Z",
+    "owner": 1
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 14,
+  "fields": {
+    "category": 6,
+    "name": "Олень",
+    "slug": "olen",
+    "image": "products/2023/11/30/2ndlove.jpeg",
+    "description": "Ездовое животное",
+    "price": "60000.00",
+    "available": true,
+    "created": "2023-11-30T09:51:11.780Z",
+    "updated": "2023-11-30T09:51:11.780Z",
+    "owner": 1
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 15,
+  "fields": {
+    "category": 5,
+    "name": "Рыба",
+    "slug": "ryba",
+    "image": "products/2023/11/30/zhirafi.jpg",
+    "description": "Фреска",
+    "price": "6000.00",
+    "available": true,
+    "created": "2023-11-30T15:30:56.514Z",
+    "updated": "2023-11-30T15:30:56.514Z",
+    "owner": 4
+  }
+},
+{
+  "model": "cart.cart",
+  "pk": 1,
+  "fields": {
+    "owner": 1,
+    "created": "2023-11-28T12:51:00.903Z"
+  }
+},
+{
+  "model": "cart.cart",
+  "pk": 2,
+  "fields": {
+    "owner": 3,
+    "created": "2023-11-29T09:00:19.168Z"
+  }
+},
+{
+  "model": "cart.cart",
+  "pk": 3,
+  "fields": {
+    "owner": 4,
+    "created": "2023-11-30T15:29:44.288Z"
+  }
+},
+{
+  "model": "cart.cartproduct",
+  "pk": 1,
+  "fields": {
+    "cart": 1,
+    "product": 1,
+    "price": "2000000.00",
+    "quantity": 6,
+    "created": "2023-11-28T13:16:47.648Z",
+    "updated": "2023-11-30T13:20:26.180Z",
+    "now_in_cart": false
+  }
+},
+{
+  "model": "cart.cartproduct",
+  "pk": 3,
+  "fields": {
+    "cart": 1,
+    "product": 3,
+    "price": "200.00",
+    "quantity": 11,
+    "created": "2023-11-29T08:53:01.574Z",
+    "updated": "2023-11-30T11:34:23.271Z",
+    "now_in_cart": false
+  }
+},
+{
+  "model": "cart.cartproduct",
+  "pk": 6,
+  "fields": {
+    "cart": 1,
+    "product": 6,
+    "price": "20.00",
+    "quantity": 1,
+    "created": "2023-11-30T15:26:49.904Z",
+    "updated": "2023-11-30T15:26:53.273Z",
+    "now_in_cart": false
+  }
+},
+{
+  "model": "cart.cartproduct",
+  "pk": 8,
+  "fields": {
+    "cart": 3,
+    "product": 1,
+    "price": "2000000.00",
+    "quantity": 4,
+    "created": "2023-11-30T15:30:12.792Z",
+    "updated": "2023-11-30T15:30:20.699Z",
+    "now_in_cart": false
+  }
+},
+{
+  "model": "cart.cartproduct",
+  "pk": 9,
+  "fields": {
+    "cart": 1,
+    "product": 15,
+    "price": "6000.00",
+    "quantity": 1,
+    "created": "2023-11-30T15:31:28.376Z",
+    "updated": "2023-11-30T15:32:10.718Z",
+    "now_in_cart": false
+  }
+},
+{
+  "model": "cart.cartproduct",
+  "pk": 10,
+  "fields": {
+    "cart": 3,
+    "product": 4,
+    "price": "500.00",
+    "quantity": 3,
+    "created": "2023-12-01T01:34:14.984Z",
+    "updated": "2023-12-01T01:34:23.725Z",
+    "now_in_cart": false
+  }
+},
+{
+  "model": "account.profile",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "created": "2023-11-28T08:48:36.459Z",
+    "date_of_birth": null,
+    "photo": "users/2023/11/29/lover_kTpDw46.jpg"
+  }
+},
+{
+  "model": "account.profile",
+  "pk": 2,
+  "fields": {
+    "user": 3,
+    "created": "2023-11-29T08:58:37.664Z",
+    "date_of_birth": null,
+    "photo": "users/2023/11/29/cat.jpg"
+  }
+},
+{
+  "model": "account.profile",
+  "pk": 3,
+  "fields": {
+    "user": 4,
+    "created": "2023-11-30T15:29:27.954Z",
+    "date_of_birth": null,
+    "photo": ""
+  }
+},
+{
+  "model": "order.order",
+  "pk": 3,
+  "fields": {
+    "user": 1,
+    "created": "2023-11-30T13:20:26.173Z",
+    "updated": "2023-11-30T15:22:07.939Z",
+    "is_checked": true,
+    "accepted": true,
+    "paid": false,
+    "owner": 1
+  }
+},
+{
+  "model": "order.order",
+  "pk": 4,
+  "fields": {
+    "user": 1,
+    "created": "2023-11-30T15:26:53.264Z",
+    "updated": "2023-11-30T15:28:43.521Z",
+    "is_checked": true,
+    "accepted": false,
+    "paid": false,
+    "owner": 1
+  }
+},
+{
+  "model": "order.order",
+  "pk": 5,
+  "fields": {
+    "user": 4,
+    "created": "2023-11-30T15:30:20.688Z",
+    "updated": "2023-11-30T15:30:20.688Z",
+    "is_checked": false,
+    "accepted": null,
+    "paid": false,
+    "owner": 1
+  }
+},
+{
+  "model": "order.order",
+  "pk": 6,
+  "fields": {
+    "user": 1,
+    "created": "2023-11-30T15:32:10.702Z",
+    "updated": "2023-11-30T15:32:10.702Z",
+    "is_checked": false,
+    "accepted": null,
+    "paid": false,
+    "owner": 4
+  }
+},
+{
+  "model": "order.order",
+  "pk": 7,
+  "fields": {
+    "user": 4,
+    "created": "2023-12-01T01:34:23.683Z",
+    "updated": "2023-12-01T01:34:55.576Z",
+    "is_checked": true,
+    "accepted": false,
+    "paid": false,
+    "owner": 1
+  }
+},
+{
+  "model": "order.orderitem",
+  "pk": 3,
+  "fields": {
+    "order": 3,
+    "product": 1,
+    "price": "2000000.00",
+    "quantity": 6
+  }
+},
+{
+  "model": "order.orderitem",
+  "pk": 4,
+  "fields": {
+    "order": 4,
+    "product": 6,
+    "price": "20.00",
+    "quantity": 1
+  }
+},
+{
+  "model": "order.orderitem",
+  "pk": 5,
+  "fields": {
+    "order": 5,
+    "product": 1,
+    "price": "2000000.00",
+    "quantity": 4
+  }
+},
+{
+  "model": "order.orderitem",
+  "pk": 6,
+  "fields": {
+    "order": 6,
+    "product": 15,
+    "price": "6000.00",
+    "quantity": 1
+  }
+},
+{
+  "model": "order.orderitem",
+  "pk": 7,
+  "fields": {
+    "order": 7,
+    "product": 4,
+    "price": "500.00",
+    "quantity": 3
+  }
+}
+]

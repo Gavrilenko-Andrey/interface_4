@@ -1,0 +1,112 @@
+{% extends "shop/base.html" %}
+{% load static %}
+{% load widget_tweaks %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static "css/nicepage.css" %}">
+<link rel="stylesheet" href="{% static "css/Просмотр-заказов.css" %}">
+{% endblock %}
+
+{% block title %}
+Заказы
+{% endblock %}
+{% block content %}
+    <section class="u-clearfix u-section-1" id="sec-373a">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-align-center u-text u-text-default u-text-1">Просмотр ваших заказов</p>
+        <p class="u-align-left u-text u-text-default u-text-2">Здесь отображается состояние Ваших текущих заказов </p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-2" id="sec-a0f4">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-col">
+              <div class="u-size-30">
+                <div class="u-layout-row">
+                  <div class="u-container-style u-layout-cell u-size-12 u-layout-cell-1">
+                    <div class="u-border-2 u-border-grey-75 u-container-layout u-valign-middle u-container-layout-1">
+                      <p class="u-align-center u-text u-text-default u-text-1"> Название товара:</p>
+                    </div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-size-12 u-layout-cell-2">
+                    <div class="u-border-2 u-border-grey-75 u-container-layout u-valign-middle u-container-layout-2">
+                      <p class="u-align-center u-text u-text-default u-text-2"> Количество:</p>
+                    </div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-size-12 u-layout-cell-3">
+                    <div class="u-border-2 u-border-grey-75 u-container-layout u-valign-middle u-container-layout-3">
+                      <p class="u-align-center u-text u-text-default u-text-3"> Цена:</p>
+                    </div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-size-12 u-layout-cell-4">
+                    <div class="u-border-2 u-border-grey-75 u-container-layout u-valign-middle u-container-layout-4">
+                      <p class="u-align-center u-text u-text-default u-text-4"> ОБЩАЯ ЦЕНА:</p>
+                    </div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-size-12 u-layout-cell-5">
+                    <div class="u-border-2 u-border-grey-75 u-container-layout u-valign-middle u-container-layout-5">
+                      <p class="u-align-center u-text u-text-default u-text-5"> Состояние товара:</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="u-size-30">
+                              {% for order_item in order_items %}
+                <div class="u-layout-row">
+
+                  <div class="u-container-style u-layout-cell u-size-12 u-layout-cell-6">
+                    <div class="u-border-2 u-border-grey-75 u-container-layout u-valign-middle u-container-layout-6">
+                      <p class="u-align-center u-text u-text-default u-text-6">{{ order_item.product.name }}</p>
+                    </div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-size-12 u-layout-cell-7">
+                    <div class="u-border-2 u-border-grey-75 u-container-layout u-container-layout-7">
+                      <p class="u-align-center u-text u-text-default u-text-7">{{ order_item.quantity }}</p>
+                    </div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-size-12 u-layout-cell-8">
+                    <div class="u-border-2 u-border-grey-75 u-container-layout u-container-layout-8">
+                      <p class="u-align-center u-text u-text-default u-text-8">{{ order_item.price }} руб.</p>
+                    </div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-size-12 u-layout-cell-9">
+                    <div class="u-border-2 u-border-grey-75 u-container-layout u-container-layout-9">
+                      <p class="u-align-center u-text u-text-default u-text-9">{{ order_item.get_cost }} руб.</p>
+                    </div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-shape-rectangle u-size-12 u-layout-cell-10">
+                    <div class="u-border-2 u-border-grey-75 u-container-layout u-container-layout-10">
+                      {% if order_item.order.is_checked %}
+
+                      <div style="text-align: center; margin:15px;">{% if order_item.order.accepted %}Принято{% else %}Отклонено{% endif %}</div>
+
+                      {% else %}
+                      <div style="text-align:center; margin:15px;">В обработке</div>
+<!--                      <form action="{% url 'order:process_order' order_item.order.id 1 %}" method="post" style="display:inline; text-align: center;">-->
+<!--                      {% csrf_token %}-->
+<!--                      <input type="submit" value="Принять" class="u-border-none u-btn u-button-style u-palette-4-base u-btn-1">-->
+<!--                      </form>-->
+<!--                      <form action="{% url 'order:process_order' order_item.order.id 0 %}" method="post" style="display:inline; text-align: center;">-->
+<!--                      {% csrf_token %}-->
+<!--                      <input type="submit" value="Отклонить" class="u-border-none u-btn u-button-style u-palette-2-base u-btn-2">-->
+<!--                      </form>-->
+<!--                      <a href="" class="u-border-none u-btn u-button-style u-palette-4-base u-btn-1">Принять</a>-->
+<!--                      <a href="" class="u-border-none u-btn u-button-style u-palette-2-base u-btn-2">Отклонить</a>-->
+                      {% endif %}
+                    </div>
+                  </div>
+                  {% empty %}
+                  <div>
+                    У вас нет заказов
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

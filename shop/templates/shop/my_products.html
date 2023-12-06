@@ -1,0 +1,52 @@
+{% extends "shop/base.html" %}
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static "css/nicepage.css" %}">
+<link rel="stylesheet" href="{% static "css/Ваши-товары.css" %}">
+{% endblock %}
+
+{% block title %}
+Ваши товары
+{% endblock %}
+
+{% block content %}
+    <section class="u-clearfix u-section-1" id="sec-a1bf">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-align-center u-text u-text-default u-text-1">Ваши товары</p>
+        <p class="u-align-left u-text u-text-2">Здесь отображаются товары, которые Вы выставили на сайт для продажи. Для обработки определенного заказа, нажмите на кнопку "Просмотр заказов", для добавления нового товара на сайт нажмите "Добавление товара".</p>
+        <a href="{% url 'order:view_orders' %}" class="u-align-right u-btn u-btn-round u-button-style u-radius-50 u-btn-1">Просмотр заказов</a>
+        <a href="{% url 'shop:add_product' %}" class="u-align-right u-btn u-btn-round u-button-style u-radius-50 u-btn-2">Добавление товара</a>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-2" id="sec-4060">
+      <div class="u-clearfix u-sheet u-valign-top u-sheet-1">
+        <div class="u-expanded-width u-layout-grid u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+              {% for product in my_products %}
+            <div class="u-border-2 u-border-grey-75 u-container-style u-list-item u-repeater-item">
+
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <a href="{% url 'shop:edit_product' product.id product.slug %}" style="color: black;">
+                <div>
+                <img class="u-expanded-width u-image u-image-round u-radius-10 u-image-1"
+                     src="{% if product.image %}{{ product.image.url }}
+{% else %}{% static "img/no_photo.jpg" %}{% endif %}" alt="" data-image-width="5616" data-image-height="3744">
+                <p class="u-align-center u-text u-text-1">{{ product.name }}</p>
+                <p class="u-align-left u-text u-text-2">Цена:</p>
+                <p class="u-align-right u-text u-text-3">{{ product.price }} руб.</p>
+                  </div>
+                  </a>
+                <form action="{% url 'shop:delete_product' product.id %}" method="post" style="display:inline; text-align: center;">
+                      {% csrf_token %}
+                      <input type="submit" value="Удалить" style="background: red; color:white; font-size:20px;">
+                  </form>
+              </div>
+
+            </div>
+              {% endfor %}
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

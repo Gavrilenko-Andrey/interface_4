@@ -1,0 +1,61 @@
+{% extends "shop/base.html" %}
+{% load static %}
+{% load widget_tweaks %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static "css/nicepage.css" %}">
+<link rel="stylesheet" href="{% static "css/Главная.css" %}">
+{% endblock %}
+
+{% block title %}
+Главная
+{% endblock %}
+
+{% block content %}
+    <section class="u-clearfix u-section-1" id="sec-c4ac">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-expanded-width u-form u-form-1">
+          <form action="{% url 'shop:product_list' %}" class="u-clearfix u-form-custom-backend u-form-horizontal u-form-spacing-10 u-inner-form" style="padding: 10px;" method="get">
+            <div class="u-form-group u-form-message">
+              <label for="{{ form.query.id_for_label }}" class="u-label"></label>
+<!--              <input type="text" placeholder="Введите название товара" id="email-c211" name="search" class="u-input u-input-rectangle u-radius-50" rows="1" required="required"/>-->
+                {{ form.query|add_class:'u-input'|add_class:'u-input-rectangle'|add_class:'u-radius-50' }}
+            </div>
+            <div class="u-align-left u-form-group u-form-submit">
+<!--              <a href="#"class="u-form-control-hidden" class="u-border-2 u-border-grey-75 u-btn u-btn-round u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-radius-50 u-btn-1">Поиск</a>-->
+              <input type="submit" value="Поиск" class="u-border-2 u-border-grey-75 u-btn u-btn-round u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-radius-50 u-btn-1">
+            </div>
+<!--            <div class="u-form-send-message u-form-send-success"></div>-->
+<!--            <div class="u-form-send-error u-form-send-message"></div>-->
+<!--            <input type="hidden" value="" name="recaptchaResponse">-->
+          </form>
+        </div>
+          {% if query %}
+        Результаты по запросу "{{ query }}":
+        {% endif %}
+      </div>
+
+    </section>
+    <section class="u-clearfix u-section-2" id="sec-8525" style="min-height: 750px;">
+      <div class="u-clearfix u-sheet u-valign-top u-sheet-1">
+        <div class="u-expanded-width u-layout-grid u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+              {% for product in products %}
+            <div class="u-border-2 u-border-grey-75 u-container-style u-list-item u-repeater-item">
+                <a href="{{ product.get_absolute_url }}" style="color: black;">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <img class="u-expanded-width u-image u-image-round u-radius-10 u-image-1" src="{% if product.image %}{{ product.image.url }}
+{% else %}{% static "img/no_photo.jpg" %}{% endif %}" alt="" data-image-width="5616" data-image-height="3744">
+                <p class="u-align-center u-text u-text-1">{{ product.name }}</p>
+                <p class="u-text u-text-2">Цена:</p>
+                <p class="u-align-right u-text u-text-3">{{ product.price }} руб.</p>
+              </div>
+                </a>
+            </div>
+              {% endfor %}
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}
+
